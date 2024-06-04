@@ -1,4 +1,5 @@
 import React,{useState,useRef} from 'react'
+import { evaluate } from 'mathjs';
 import backspace from './backspace.png'
 
 export default function Standard(props) {
@@ -18,7 +19,7 @@ export default function Standard(props) {
 
     const evaluateValue=()=>{
         try {
-            setInputVal(eval(inputVal).toString())
+            setInputVal(evaluate(inputVal).toString())
         } catch (error) {
             setInputVal('Undefined')
         }
