@@ -17,7 +17,7 @@ export default function Navbar(props) {
               <Link to="/">Programmer</Link>
             </li>
             <li className="section">
-              <Link to="/">Date Calculation</Link>
+              <Link to="/dateCalc">Date Calculation</Link>
             </li>
             <li className="section">
               <Link to="/">Converter</Link>
