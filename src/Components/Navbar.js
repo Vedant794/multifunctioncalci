@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 export default function Navbar(props) {
   return (
@@ -7,19 +8,19 @@ export default function Navbar(props) {
         <div className="items-cont ml-4">
           <ul className="items flex space-x-7 items-center">
             <li className="section">
-              <a href="/">Standard</a>
+              <Link to="/">Standard</Link>
             </li>
             <li className="section">
-              <a href="/">Scientific</a>
+              <Link to="/scientific">Scientific</Link>
             </li>
             <li className="section">
-              <a href="/">Programmer</a>
+              <Link to="/">Programmer</Link>
             </li>
             <li className="section">
-              <a href="/">Date Calculation</a>
+              <Link to="/">Date Calculation</Link>
             </li>
             <li className="section">
-              <a href="/">Converter</a>
+              <Link to="/">Converter</Link>
             </li>
           </ul>
         </div>

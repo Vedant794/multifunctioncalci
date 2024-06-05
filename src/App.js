@@ -2,7 +2,8 @@
 import React,{useState} from 'react';
 import Navbar from "./Components/Navbar";
 import Standard from "./Components/Standard";
-
+import Scientific from './Components/Scientific';
+import { BrowserRouter,Routes, Route,} from "react-router-dom";
 
 
 function App() {
@@ -21,8 +22,14 @@ function App() {
   
   return (
     <div className="App">
+      <BrowserRouter>
       <Navbar mode={mode} toggleMode={toggleMode}/>
-      <Standard mode={mode}/>
+      <Routes>
+        <Route exact key="standard" path='/' element={<Standard mode={mode}/>}></Route>
+        <Route exact key="scientific" path='/scientific' element={<Scientific mode={mode}/>}></Route>
+      
+      </Routes>
+      </BrowserRouter>
       </div>
   );
 }
