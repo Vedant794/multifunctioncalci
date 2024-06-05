@@ -4,8 +4,6 @@ import Navbar from "./Components/Navbar";
 import Standard from "./Components/Standard";
 import Scientific from './Components/Scientific';
 import { BrowserRouter,Routes, Route,} from "react-router-dom";
-import DateCalculation from './Components/DateCalculation';
-import Programmer from './Components/Programmer';
 
 
 function App() {
@@ -30,8 +28,7 @@ function App() {
       <Routes>
         <Route exact key="standard" path='/' element={<Standard mode={mode}/>}></Route>
         <Route exact key="scientific" path='/scientific' element={<Scientific mode={mode}/>}></Route>
-        <Route exact key="Date Calculation" path='/dateCalc' element={<DateCalculation mode={mode}/>}></Route>
-        <Route exact key="Programmer" path='/programmer' element={<Programmer mode={mode}/>}></Route>
+      
       </Routes>
       </BrowserRouter>
       </div>
