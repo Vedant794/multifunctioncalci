@@ -14,7 +14,7 @@ export default function Navbar(props) {
               <Link to="/scientific">Scientific</Link>
             </li>
             <li className="section">
-              <Link to="/">Programmer</Link>
+              <Link to="/programmer">Programmer</Link>
             </li>
             <li className="section">
               <Link to="/dateCalc">Date Calculation</Link>

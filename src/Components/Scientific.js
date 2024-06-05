@@ -92,7 +92,7 @@ export default function Scientific(props) {
     <>
     <div className="body-style flex flex-col justify-center items-center w-4/5 h-[677px]" style={{backgroundColor:props.mode==='light'?'rgba(229,231,235,1)':'#292828'}}>
         <div className="display flex justify-center items-center w-full h-[20rem]">
-            <input className='w-full h-full border-none text-8xl text-right' style={{backgroundColor:props.mode==='light'?'white':'#292828',color:props.mode==='light'?'black':'white'}} ref={displayRef} value={inputVal} type="text"id="display-box" readOnly/>
+            <input className='w-full h-full border-none text-8xl text-right' style={{backgroundColor:props.mode==='light'?'rgba(229,231,235,1)':'#292828',color:props.mode==='light'?'black':'white'}} ref={displayRef} value={inputVal} type="text"id="display-box" readOnly/>
         </div>
         <div className="numPad grid grid-cols-5 ml-2 w-full">
             <button className='w-[230px] h-14 mt-2 rounded-sm text-xl' style={{backgroundColor:props.mode==='light'?'white':'#494848',color:props.mode==='light'?'black':'white'}} onClick={displayInput('.')}>.</button>

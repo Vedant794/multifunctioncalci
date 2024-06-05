@@ -5,10 +5,12 @@ import Standard from "./Components/Standard";
 import Scientific from './Components/Scientific';
 import { BrowserRouter,Routes, Route,} from "react-router-dom";
 import DateCalculation from './Components/DateCalculation';
+import Programmer from './Components/Programmer';
 
 
 function App() {
   const [mode,setMode] = useState('light');
+  document.body.style.backgroundColor="rgba(229,231,235,1)"
 
   const toggleMode=()=>{
     if(mode==='light'){
@@ -17,7 +19,7 @@ function App() {
     }
     else{
       setMode('light')
-      document.body.style.backgroundColor='white'
+      document.body.style.backgroundColor='rgba(229,231,235,1)'
     }
   }
   
@@ -29,6 +31,7 @@ function App() {
         <Route exact key="standard" path='/' element={<Standard mode={mode}/>}></Route>
         <Route exact key="scientific" path='/scientific' element={<Scientific mode={mode}/>}></Route>
         <Route exact key="Date Calculation" path='/dateCalc' element={<DateCalculation mode={mode}/>}></Route>
+        <Route exact key="Programmer" path='/programmer' element={<Programmer mode={mode}/>}></Route>
       </Routes>
       </BrowserRouter>
       </div>
