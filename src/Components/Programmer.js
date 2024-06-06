@@ -32,7 +32,7 @@ export default function Programmer(props) {
     <>
     <div className="body-style flex flex-col justify-center items-center w-4/5 h-[677px]" style={{backgroundColor:props.mode==='light'?'rgba(229,231,235,1)':'#292828'}}>
         <div className="display flex justify-between items-center w-full h-[20rem]">
-        <div className="display-prog flex flex-col">
+        <div className="display-prog flex flex-col" style={{color:props.mode==='light'?'black':'white'}}>
                 <p>Decimal:{deci}</p>
                 <p>Binary:{deci?(deci>>>0).toString(2):''}</p>
                 <p>Octal:{deci?(deci>>>0).toString(8):''}</p>
